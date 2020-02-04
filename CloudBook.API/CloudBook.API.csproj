@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeIdentifiers>ubuntu.16.04-x64</RuntimeIdentifiers>
+    <LangVersion>7.2</LangVersion>
+    <Version>0.0.2</Version>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <Authors>Simanto Rahman</Authors>
+    <AssemblyName>CloudBook</AssemblyName>
+    <Owners>Blue Atlantis Services</Owners>
+    <Title>CloudBook</Title>
+    <PackageProjectUrl>www.cloudbook.com/api</PackageProjectUrl>
+    <StartupObject>CloudBook.API.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0"/>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3"/>
+    <PackageReference Include="MySql.Data" Version="8.0.11"/>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.1"/>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2"/>
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0005"/>
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0005"/>
+    <PackageReference Include="TensorFlowSharp.Core" Version="2.0.0"/>
+    <ProjectReference Include="..\CloudBook.Data\CloudBook.Data.csproj"/>
+    <Reference Include="VirusTotal.NET"/>
+  </ItemGroup>
+</Project>
